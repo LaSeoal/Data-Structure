@@ -15,7 +15,7 @@ BST_TREE* create_bst() {
 }
 
 void traverse_preorder( T_NODE* root ) {
-	if( root->data != NULL ) {
+	if( root != NULL ) {
 		printf( "%d ", root->data );
 		traverse_preorder( root->left );
 		traverse_preorder( root->right );
@@ -23,7 +23,7 @@ void traverse_preorder( T_NODE* root ) {
 }
 
 void traverse_inorder( T_NODE* root ) {
-	if( root->data != NULL ) {
+	if( root != NULL ) {
 		traverse_inorder( root->left );
 		printf( "%d ", root->data );
 		traverse_inorder( root->right );
@@ -31,7 +31,7 @@ void traverse_inorder( T_NODE* root ) {
 }
 
 void traverse_postorder( T_NODE* root ) {
-	if( root->data != NULL ) {
+	if( root != NULL ) {
 		traverse_postorder( root->left );
 		traverse_postorder( root->rifht );
 		printf( "%d ", root->data );
@@ -51,7 +51,7 @@ T_NODE* find_largest_node( T_NODE* root ) {
 }
 
 T_NODE* search_bst( T_NODE* root, int key ) {
-	if( root->data == NULL )
+	if( root == NULL )
 		return NULL;
 
 	if( key == root->data )
