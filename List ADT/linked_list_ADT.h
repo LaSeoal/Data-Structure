@@ -9,9 +9,9 @@ typedef struct node {
 // LLIST
 typedef struct {
 	int count;
-	NODE* front;
-	NODE* rear;
-	NODE* pos;
+	LLIST_NODE* front;
+	LLIST_NODE* rear;
+	LLIST_NODE* pos;
 }LLIST;
 
 //Operations
