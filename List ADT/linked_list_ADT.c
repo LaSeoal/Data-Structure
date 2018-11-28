@@ -111,7 +111,7 @@ bool del_node_at( LLIST* list, unsigned int index ) {
 		list->pos = NULL;
 		( list->count )--;
 
-		return;
+		return true;
 	} else {
 		pre->next = pos->next;
 		free( list->pos );
