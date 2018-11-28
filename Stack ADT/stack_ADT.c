@@ -14,7 +14,7 @@ STACK* create_stack() {
 }
 
 bool push( STACK* stack, void* in ) {
-	STACK_NODE* new_node = ( STACK_NODE* )malloc( sizeof( STACK_NODE* ));
+	STACK_NODE* new_node = ( STACK_NODE* )malloc( sizeof( STACK_NODE ));
 
 	if(new_node) {	
 		new_node->data = in;
