@@ -35,9 +35,10 @@ void insertion_sort( int list[], int last ) {
 			walker--
 		) {
 			list[walker+1] = list[walker];	
+		}
+		//insertion on adequate location
+		list[walker+1] = hold;
 	}
-	//insertion on adequate location
-	list[walker+1] = hold;
 }
 
 void median_left( int list[], int left, int right ) {
