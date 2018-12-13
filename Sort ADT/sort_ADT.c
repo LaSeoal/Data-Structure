@@ -85,11 +85,9 @@ void insertion_sort_range( int list[], int first, int last ) {
 		) {
 			list[walker+1] = list[walker];
 		}
-
-		list[walker+1] = list[walker];
+		
+		list[walker+1] = hold; // insertion on adequate location
 	}
-
-	list[walker+1] = hold; // insertion on adequate location
 }
 
 void quick_sort( int list[], int left, int right ) {
